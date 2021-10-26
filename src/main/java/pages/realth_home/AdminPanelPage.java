@@ -6,13 +6,14 @@ import pages.base.BasePage;
 import static pages.realth_home.AddEntryPage.a;
 
 public class AdminPanelPage extends BasePage {
-    public AdminPanelPage(WebDriver driver) {
-        super(driver);
-    }
 
     private final By Xnameblob = By.xpath("//a[text()='" + a + "']");
     private final By Xdelete = By.xpath("//a[text()='Удалить']");
     private final By Xconfirmation = By.xpath("//input[@value='Да, я уверен']");
+
+    public AdminPanelPage(WebDriver driver) {
+        super(driver);
+    }
 
     public AdminPanelPage deleteblog() {
         WebElement nameblob = driver.findElement(Xnameblob);

@@ -9,6 +9,7 @@ import pages.realth_home.*;
 import static common.Config.HOLD_BROWSER_OPEN;
 
 public class BaseTest {
+
     protected WebDriver driver = Common.createDriver();
     protected BasePage basePage = new BasePage(driver);
     protected RealtLoginPage realtLoginPage = new RealtLoginPage(driver);

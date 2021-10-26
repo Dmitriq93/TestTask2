@@ -6,9 +6,6 @@ import org.testng.Assert;
 import pages.base.BasePage;
 
 public class AddEntryPage extends BasePage {
-    public AddEntryPage(WebDriver driver) {
-        super(driver);
-    }
 
     private final By Xtitle = By.xpath("//input[@id='id_title']");
     private final By XSlug = By.xpath("//input[@id='id_slug']");
@@ -18,6 +15,9 @@ public class AddEntryPage extends BasePage {
     private final By Xsave = By.xpath("//input[@value='Сохранить']");
     public static int a = 100000000 + (int) (Math.random() * 999999999);
 
+    public AddEntryPage(WebDriver driver) {
+        super(driver);
+    }
 
     public AddEntryPage checktit() {
         WebElement panel = driver.findElement(XxPanel);

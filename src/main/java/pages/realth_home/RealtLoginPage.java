@@ -5,13 +5,14 @@ import org.openqa.selenium.WebDriver;
 import pages.base.BasePage;
 
 public class RealtLoginPage extends BasePage {
-    public RealtLoginPage(WebDriver driver) {
-        super(driver);
-    }
 
     private final By login = By.xpath("//input[@name='username']");
     private final By pass = By.xpath("//input[@name='password']");
     private final By entry = By.xpath("//input[@value='Войти']");
+
+    public RealtLoginPage(WebDriver driver) {
+        super(driver);
+    }
 
     public RealtLoginPage entry(){
         driver.findElement(login).sendKeys("selenium");

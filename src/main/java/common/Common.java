@@ -7,6 +7,7 @@ import static common.Config.PLATFORM_AND_BROWSER;
 import static constants.Constants.TimeoutVariable.IMPLICIT_WAIT;
 
 public class Common {
+
     public static WebDriver createDriver() {
         WebDriver driver = null;
 
