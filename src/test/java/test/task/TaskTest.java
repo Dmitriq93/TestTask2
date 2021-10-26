@@ -7,7 +7,7 @@ import static constants.Constants.Urls.*;
 public class TaskTest extends BaseTest {
 
     @Test
-    public void testtask() {
+    public void testTask() {
         basePage.open(REALT_LOGIN_PAGE);
         realtLoginPage.entry();
     }
@@ -19,9 +19,9 @@ public class TaskTest extends BaseTest {
     }
 
     @Test
-    public void verificationnewblog(){
+    public void verificationNewBlog(){
         basePage.open(BLOG);
-        blogPage.verificationnewblog();
+        blogPage.verificationNewBlog();
         basePage.open(AdminPanelPage);
         adminPanelPage.deleteblog();
     }

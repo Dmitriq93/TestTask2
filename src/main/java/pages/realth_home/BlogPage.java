@@ -11,7 +11,7 @@ public class BlogPage extends BasePage {
         super(driver);
     }
 
-    public BlogPage verificationnewblog() {
+    public BlogPage verificationNewBlog() {
         WebElement blog = driver.findElement(By.xpath("//a[text()='" + a + "']"));
         blog.click();
         WebElement name = driver.findElement(By.xpath("//a[text()='" + a + "']"));
