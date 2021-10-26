@@ -8,8 +8,8 @@ import pages.base.BasePage;
 
 public class HomePage extends BasePage {
 
-    private final By XPanel = By.xpath("//h1[@class='dashboard-title']");
-    private final By XAdd = By.xpath("//a[@href='/admin/blog/entry/add/']");
+    private final By xPanel = By.xpath("//h1[@class='dashboard-title']");
+    private final By xAdd = By.xpath("//a[@href='/admin/blog/entry/add/']");
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -18,14 +18,14 @@ public class HomePage extends BasePage {
     public HomePage verificationTit() {
         String verificationTit = driver.getTitle();
         Assert.assertEquals(verificationTit, "Администрирование сайта | Панель управления");
-        WebElement panel = driver.findElement(XPanel);
+        WebElement panel = driver.findElement(xPanel);
         String tit = panel.getText();
         Assert.assertEquals(tit, "Панель управления");
         return this;
     }
 
-    public HomePage clickadd() {
-        WebElement add = driver.findElement(XAdd);
+    public HomePage clickAdd() {
+        WebElement add = driver.findElement(xAdd);
         add.click();
         return this;
     }

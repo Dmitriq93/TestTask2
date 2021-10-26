@@ -12,7 +12,7 @@ public class BaseTest {
 
     protected WebDriver driver = Common.createDriver();
     protected BasePage basePage = new BasePage(driver);
-    protected RealtLoginPage realtLoginPage = new RealtLoginPage(driver);
+    protected SeleniumLoginPage seleniumLoginPage = new SeleniumLoginPage(driver);
     protected HomePage homePage = new HomePage(driver);
     protected AddEntryPage addEntryPage = new AddEntryPage(driver);
     protected BlogPage blogPage = new BlogPage(driver);

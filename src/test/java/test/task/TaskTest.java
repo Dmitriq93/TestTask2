@@ -1,5 +1,4 @@
 package test.task;
-
 import org.testng.annotations.Test;
 import test.base.BaseTest;
 import static constants.Constants.Urls.*;
@@ -8,21 +7,21 @@ public class TaskTest extends BaseTest {
 
     @Test
     public void testTask() {
-        basePage.open(REALT_LOGIN_PAGE);
-        realtLoginPage.entry();
+        basePage.open(SELENIUM_LOGIN_PAGE);
+        seleniumLoginPage.entry();
     }
 
     @Test
     public void verificationPanel() {
-        homePage.verificationTit().clickadd();
+        homePage.verificationTit().clickAdd();
         addEntryPage.checkTit().newBlog();
     }
 
     @Test
-    public void verificationNewBlog(){
+    public void verificationnewblog(){
         basePage.open(BLOG);
-        blogPage.verificationNewBlog();
+        blogPage.checkNewBlog();
         basePage.open(AdminPanelPage);
-        adminPanelPage.deleteblog();
+        adminPanelPage.deleteBlog();
     }
 }

@@ -8,7 +8,7 @@ public class Constants {
     }
 
     public static class Urls{
-        public static final String REALT_LOGIN_PAGE = "https://igorakintev.ru/admin/";
+        public static final String SELENIUM_LOGIN_PAGE = "https://igorakintev.ru/admin/";
         public static final String BLOG = "https://igorakintev.ru/blog/";
         public static final String AdminPanelPage = "https://igorakintev.ru/admin/blog/entry/";
     }
