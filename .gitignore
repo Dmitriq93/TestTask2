@@ -1,0 +1,6 @@
+*.exe
+*.jar
+.idea/
+target/
+out/
+build/
