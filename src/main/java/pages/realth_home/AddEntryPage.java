@@ -7,27 +7,27 @@ import pages.base.BasePage;
 
 public class AddEntryPage extends BasePage {
 
-    private final By Xtitle = By.xpath("//input[@id='id_title']");
+    private final By XTitle = By.xpath("//input[@id='id_title']");
     private final By XSlug = By.xpath("//input[@id='id_slug']");
     private final By XxPanel = By.xpath("(//h1)[2]");
-    private final By Xtextmarkdown = By.xpath("//textarea [@name='text_markdown']");
-    private final By Xtext = By.xpath("//textarea[@name='text']");
-    private final By Xsave = By.xpath("//input[@value='Сохранить']");
+    private final By XTextMarkdown = By.xpath("//textarea [@name='text_markdown']");
+    private final By XText = By.xpath("//textarea[@name='text']");
+    private final By XSave = By.xpath("//input[@value='Сохранить']");
     public static int a = 100000000 + (int) (Math.random() * 999999999);
 
     public AddEntryPage(WebDriver driver) {
         super(driver);
     }
 
-    public AddEntryPage checktit() {
+    public AddEntryPage checkTit() {
         WebElement panel = driver.findElement(XxPanel);
         String tiit = panel.getText();
         Assert.assertEquals(tiit, "Добавить entry");
         return this;
     }
 
-    public AddEntryPage newblog() {
-        WebElement title = driver.findElement(Xtitle);
+    public AddEntryPage newBlog() {
+        WebElement title = driver.findElement(XTitle);
         title.sendKeys(String.valueOf(a));
 
         WebElement slug = driver.findElement(XSlug);
@@ -35,15 +35,15 @@ public class AddEntryPage extends BasePage {
         slug.clear();
         slug.sendKeys(String.valueOf(b));
 
-        WebElement textmarkdown = driver.findElement(Xtextmarkdown);
+        WebElement textMarkdown = driver.findElement(XTextMarkdown);
         int c = 100000000 + (int) (Math.random() * 999999999);
-        textmarkdown.sendKeys(String.valueOf(c));
+        textMarkdown.sendKeys(String.valueOf(c));
 
-        WebElement text = driver.findElement(Xtext);
+        WebElement text = driver.findElement(XText);
         int d = 100000000 + (int) (Math.random() * 999999999);
         text.sendKeys(String.valueOf(d));
 
-        WebElement save = driver.findElement(Xsave);
+        WebElement save = driver.findElement(XSave);
         save.click();
         return this;
     }

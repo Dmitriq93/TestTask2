@@ -15,7 +15,7 @@ public class TaskTest extends BaseTest {
     @Test
     public void verificationPanel() {
         homePage.verificationTit().clickadd();
-        addEntryPage.checktit().newblog();
+        addEntryPage.checkTit().newBlog();
     }
 
     @Test
