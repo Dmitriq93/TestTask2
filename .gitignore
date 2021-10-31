@@ -1,6 +1,10 @@
 *.exe
 *.jar
+*.iml
 .idea/
+.allure/
+allure-results/
 target/
 out/
 build/
+webdriver.properties
