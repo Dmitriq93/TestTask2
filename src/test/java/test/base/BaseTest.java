@@ -19,14 +19,9 @@ public class BaseTest {
     protected AdminPanelPage adminPanelPage = new AdminPanelPage(driver);
 
     @AfterSuite(alwaysRun = true)
-     public void close(){
-         if (HOLD_BROWSER_OPEN){
+     public void close() {
+         if (HOLD_BROWSER_OPEN) {
              driver.quit();
          }
      }
-
-
-
-
-
 }

@@ -14,7 +14,7 @@ public class SeleniumLoginPage extends BasePage {
         super(driver);
     }
 
-    public SeleniumLoginPage entry(){
+    public SeleniumLoginPage entry() {
         driver.findElement(xLogin).sendKeys("selenium");
         driver.findElement(xPass).sendKeys("super_password");
         driver.findElement(xEntry).click();
